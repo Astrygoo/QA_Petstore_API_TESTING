@@ -47,9 +47,9 @@ Repositori ini disusun agar mudah dibaca dan dipahami alurnya:
 
 └── 📁 Reports/
 
-&#x20;   ├── Swagger\_Petstore\_Complete\_TestCases\_Final.xlsx  # Dokumen berisi ratusan skenario test cases.
+   ├── Swagger\_Petstore\_Complete\_TestCases\_Final.xlsx  # Dokumen berisi ratusan skenario test cases.
 
-&#x20;   └── QA\_Bug\_Report\_Petstore.xlsx                     # Laporan celah/bug sistem (High, Medium, Low severity).
+   └── QA\_Bug\_Report\_Petstore.xlsx                     # Laporan celah/bug sistem (High, Medium, Low severity).
 ```
 
 ---
