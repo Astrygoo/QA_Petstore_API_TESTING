@@ -50,12 +50,12 @@ Repositori ini disusun agar mudah dibaca dan dipahami alurnya:
 &#x20;   ├── Swagger\_Petstore\_Complete\_TestCases\_Final.xlsx  # Dokumen berisi ratusan skenario test cases.
 
 &#x20;   └── QA\_Bug\_Report\_Petstore.xlsx                     # Laporan celah/bug sistem (High, Medium, Low severity).
-
+```
 
 ---
 
-
 ## Testing Scope & Key Findings
+
 Pengujian difokuskan pada validasi struktur data, keamanan input, dan respon logika bisnis pada endpoint utama (Pet, User, dan Store).
 
 Highlight Temuan Bug (Bug Report):
