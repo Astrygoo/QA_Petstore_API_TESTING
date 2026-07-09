@@ -4,9 +4,11 @@ Welcome to my API Testing repository!
 
 This project is a comprehensive API (Application Programming Interface) testing documentation using **Swagger Petstore** as a **dummy** system. 
 
-The primary goal of this project is to demonstrate my understanding of the end-to-end Quality Assurance (QA) workflow—from reading the API Contract and designing Test Case scenarios, to executing tests via Postman and compiling professional Bug Reports.
+The primary goal of this project is to demonstrate my understanding of the end-to-end Quality Assurance (QA) workflow from reading the API Contract and designing Test Case scenarios, to executing tests via Postman and compiling professional Bug Reports.
+
 
 ## Tools & Technologies
+
 * **API Testing:** Postman
 * **API Documentation:** Swagger / OpenAPI
 * **Test Management & Reporting:** Microsoft Excel
