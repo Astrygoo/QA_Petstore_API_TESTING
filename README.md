@@ -1,84 +1,60 @@
 # Swagger Petstore API Testing - QA
 
+Welcome to my API Testing repository!
 
+This project is a comprehensive API (Application Programming Interface) testing documentation using **Swagger Petstore** as a **dummy** system. 
 
-Selamat datang di repositori API Testing saya!
+The primary goal of this project is to demonstrate my understanding of the end-to-end Quality Assurance (QA) workflow—from reading the API Contract and designing Test Case scenarios, to executing tests via Postman and compiling professional Bug Reports.
 
-Proyek ini adalah dokumentasi pengujian API (Application Programming Interface) secara komprehensif menggunakan **Swagger Petstore** sebagai sistem **dummy.** 
-
-
-
-Tujuan utama dari proyek ini adalah untuk mendemonstrasikan pemahaman saya mengenai alur kerja Quality Assurance (QA) secara end-to-end—mulai dari membaca API Contract, menyusun skenario Test Case, mengeksekusi pengujian via Postman, hingga menyusun Bug Report yang profesional.
-
-
-
-## Tools \& Technologies
-
-- API Testing: Postman
-
-- API Documentation: Swagger / OpenAPI
-
-- Test Management \& Reporting: Microsoft Excel
-
-- Testing Methodology: Black-box Testing, Positive \& Negative Testing, Security Edge-cases (XSS Injection test).
-
-
+## Tools & Technologies
+* **API Testing:** Postman
+* **API Documentation:** Swagger / OpenAPI
+* **Test Management & Reporting:** Microsoft Excel
+* **Testing Methodology:** Black-box Testing, Positive & Negative Testing, Security Edge-cases (XSS Injection test).
 
 ---
 
-
 ## 📁 Project Structure
-
-Repositori ini disusun agar mudah dibaca dan dipahami alurnya:
-
-
+This repository is structured to be easily readable and understandable:
 
 ```text
-
 ├── 📁 Contract/
-
-│   └── api contract petstore.json              # Blueprint/API Contract asli sebagai acuan testing.
-
+│   └── api contract petstore.json                 # Original/blueprint API Contract as a testing reference.
 ├── 📁 Postman-Files/
-
-│   ├── Swagger Petstore.postman\_collection.json  # File kumpulan request \& automation test.
-
-│   └── pet store swagger.postman\_environment.json # File environment variables (Base URL, dll).
-
+│   ├── Swagger Petstore.postman_collection.json   # Collection file of requests & automation tests.
+│   └── pet store swagger.postman_environment.json # Environment variables file (Base URL, etc.).
 └── 📁 Reports/
-
-   ├── Swagger\_Petstore\_Complete\_TestCases\_Final.xlsx  # Dokumen berisi ratusan skenario test cases.
-
-   └── QA\_Bug\_Report\_Petstore.xlsx                     # Laporan celah/bug sistem (High, Medium, Low severity).
+   ├── Swagger_Petstore_Complete_TestCases_Final.xlsx  # Document containing hundreds of test case scenarios.
+   └── QA_Bug_Report_Petstore.xlsx                     # System vulnerability/bug report (High, Medium, Low severity).
 ```
 
 ---
 
 ## Testing Scope & Key Findings
 
-Pengujian difokuskan pada validasi struktur data, keamanan input, dan respon logika bisnis pada endpoint utama (Pet, User, dan Store).
+The testing is focused on data structure validation, input security, and business logic responses on the main endpoints (Pet, User, and Store).
 
-Highlight Temuan Bug (Bug Report):
-Sistem yang baik tidak hanya diuji fungsi normalnya (Positive), tapi juga harus tahan terhadap kesalahan (Negative). Berikut beberapa bug menarik yang berhasil saya temukan dan laporkan:
+Bug Report Highlights:
+A good system shouldn't just be tested for its normal functions (Positive testing), but must also be resilient against errors (Negative testing). Here are some interesting bugs I found and reported:
 
-🔴 [High Severity]: Fatal error (500 Internal Server Error) saat mencoba membuat user dengan input array/list yang dimanipulasi, yang bisa berpotensi merusak service.
+🔴 [High Severity]: Fatal error (500 Internal Server Error) when attempting to create a user with manipulated array/list inputs, which could potentially crash the service.
 
-🟠 [Medium Severity]: Validasi lemah pada endpoint form-data. Sistem mengembalikan status 200 OK dan menyimpan data kosong meskipun mandatory fields (seperti nama pet) tidak diisi.
+🟠 [Medium Severity]: Weak validation on form-data endpoints. The system returns a 200 OK status and saves empty data even when mandatory fields (like pet name) are left blank.
 
-🟡 [Low Severity]: Response code yang kurang sesuai standar RESTful, seperti sistem memberikan 404 Not Found alih-alih 400 Bad Request saat diserang dengan format tipe data ID yang salah.
+🟡 [Low Severity]: RESTful standard non-compliant response codes, such as the system returning a 404 Not Found instead of a 400 Bad Request when attacked with the wrong ID data type format.
 
 
 ## How to Run the Tests (Postman)
 
-Ingin mencoba menjalankan test script ini sendiri? Gampang banget:
+Want to try running this test script yourself? It's super easy:
 
-- Clone atau download repositori ini.
+Clone or download this repository.
 
-- Buka aplikasi Postman.
+Open the Postman application.
 
-- Klik tombol Import, lalu pilih file koleksi (.postman_collection.json) dan environment (.postman_environment.json) dari folder Postman-Files.
+Click the Import button, then select the collection file (.postman_collection.json) and the environment file (.postman_environment.json) from the Postman-Files folder.
 
-- Jangan lupa aktifkan environment pet store swagger di pojok kanan atas Postman.
+Don't forget to activate the pet store swagger environment in the top right corner of Postman.
 
-- Jalankan melalui Collection Runner untuk melihat hasil eksekusi test case secara langsung!
+Run it via the Collection Runner to see the test case execution results in real-time!
 
